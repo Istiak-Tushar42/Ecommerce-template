@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: $primary-font;
+    background: rgb(248, 242, 242);
     font-size: 14px;
     line-height: 1.75;
     color: $primary-color;
@@ -20,8 +20,12 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 a {
-    text-decoration: none;
+    color: #222;
+    &:hover {
+        text-decoration: none;
+    }
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $secondary-font;

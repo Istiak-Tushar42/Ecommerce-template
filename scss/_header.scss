@@ -1,80 +1,247 @@
+@import 'mixins';
+
+/*
+** TOPBAR START HERE
+*/
 .topbar {
     background: $background-color;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
 
-    .topbar-content {
+    .container-fluid {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
-        .contact-us {
-            display: flex;
-            align-items: center;
-            color: $heading;
-            margin-left: .5rem;
-            span {
-                margin-left: .35rem;
-                transition: all .5s ease-in-out;
-            }
 
-            &:hover {
-                span {
+        .topbar-menu {
+            list-style: none;
+            display: flex;
+            .topbar-list {
+                margin-right: .75rem;
+                .topbar-link {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
                     color: $primary-color;
+                    transition: all .5s ease-in-out;
+                    span {
+                        font-size: 16px;
+                        margin-right: .25rem;
+                        color: $primary-color;
+                    }
+
+                    &:hover {
+                        color: $primary;
+                    }
                 }
             }
         }
-    }
-
-    .topbar-discount {
+    
         p {
+            font-size: 14px;
+            color: $primary-color;
             .discount {
                 color: $offer;
+                font-weight: 500;
             }
 
             .shop-now {
-                color: #333;
+                font-weight: 500;
                 transition: all .5s ease-in-out;
-                
+                color: #333;
                 &:hover {
                     color: $primary;
                 }
             }
         }
+    
+        .nice-select {
+            border: 0;
+            background: transparent;
+            font-size: 14px;
+            color: $primary-color;
+        }
     }
+} // TOPBAR END HERE
 
-    .dd-select {
-        width: 70px !important;
-        border: 0;
-        border-radius: .25rem;
-        background: transparent !important;
-    }
+/*
+** HEADER START HERE
+*/
+.header {
+    width: 100%;
+    padding: .75rem 0;
+    background: #fff;
 
-    .dd-options {
+    .container-fluid {
         display: flex;
-        justify-content: center;
-        width: 70px !important;
-        overflow: hidden;
-        background: #f4f4f4;
-        border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-        border: 0;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
-    }
+        justify-content: space-between;
+        align-items: center;
+        /* LOGO*/
+        .brand-logo {
+            display: block;
+            img {
+                width: 100px;
+            }
+        }
 
-    .dd-selected-image {
-        width: 20px;
-    }
+        /* MAIN-MENU */
+        .main-menu {
+            list-style: none;
+            display: flex;
+            .menu-list {
+                .menu-link {
+                    color: #222;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: all .5s ease-in-out;
+                    position: relative;
+                    margin-right: 2rem;
+                    font-size: 14px;
 
-    .dd-option-image {
-        max-width: 20px;
-        vertical-align: middle;
-        float: none;
-        margin-right: 0;
+                    .new {
+                        @include newItem($new);
+                    }
+
+                    .sale {
+                        @include newItem($sale);
+                    }
+                    
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+                &:nth-child(4) {
+                    .menu-link {
+                        color: $offer;
+                        transition: all .5s ease-in-out;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ICON-MENU */
+        .icon-lists {
+            list-style: none;
+            display: flex;
+            .icon-list {
+                margin-right: .75rem;
+                &:last-child {
+                    margin-left: 0;
+                }
+
+                .icon-link {
+                    font-size: 20px;
+                    position: relative;
+                    margin-right: .75rem;
+                    font-weight: 600;
+                    .counter {
+                        font-size: 12px;
+                        background: #333;
+                        color: #fff;
+                        width: 15px;
+                        height: 15px;
+                        display: block;
+                        text-align: center;
+                        border-radius: 10px;
+                        position: absolute;
+                        top: -6px;
+                        right: -10px;
+                        font-weight: 400;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+    }
+} // HEADER END HERE
+
+
+/*
+** MEGA-MENU START HERE
+*/
+.mega-menu {
+    // display: none;
+    padding: 1.5rem;
+    transform: translateY(15px) translateZ(0);
+    transition: opacity .2s, visibility .2s, transform .2s;
+    z-index: 1111;
+    background: white;
+    margin-top: -15px;
+    box-shadow: inset 0 0 0 1px #eaeaea, 0 5px 20px rgba(0,0,0,.15);
+
+    .dropdown-lists {
+        h6 {
+            color: #222;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 12px;
+            padding: 13px 0;
+            border-bottom: 1px solid #eee;
+
+            &::selection {
+                color: $primary;
+            }
+        }
+
+        .dropdown-list {
+            padding: 13px 0;
+
+            .dropdown-link {
+                font-size: 14px;
+                color: #878787;
+                transition: all .5s ease-in-out;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                display: block;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    color: #222;
+                }
+            }
+
+            .hot-item {
+                position: relative;
+
+                .hot {
+                    @include newItem($sale);
+                    right: 133px;
+                    margin-top: -10px;
+                }
+            }
+
+            .new-item {
+                position: relative;
+
+                .new {
+                    @include newItem($new);
+                    right: 115px;
+                    margin-top: -12px;
+                }
+            }
+
+            .new-item2 {
+                position: relative;
+
+                .new {
+                    @include newItem($new);
+                    right: 135px;
+                    margin-top: -12px;
+                }
+            }
+        }
+    }
+}
+
+.menu-link:hover {
+    .mega-menu {
+        display: block;
     }
 }

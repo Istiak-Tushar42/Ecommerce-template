@@ -3,50 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>Ecommerce</title>
-    <link rel="stylesheet" href="assets/css/Pe-icon-7-stroke.css">
+    <!-- NICE SELECT CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- TOPBAR -->
+    <!-- TOPBAR START -->
     <div class="topbar">
-        <div class="topbar-content">
-            <a href="tel:+88017XXXXXXXX" class="contact-us">
-                <img src="assets/images/svg-icons/call.svg" width="15" alt="call-icon">
-                <span>+88016XXXXXXXX</span>
-            </a>
-            
-            <a href="mailto:example@example.com" class="contact-us">
-                <img src="assets/images/svg-icons/email.svg" width="15" alt="call-icon">
-                <span>example@example.com</span>
-            </a>
-        </div>
+        <div class="container-fluid">
+            <ul class="topbar-menu">
+                <li class="topbar-list">
+                    <a href="tel:+88017XXXXXXXX" class="topbar-link">
+                        <span class="icon-phone"></span> +88017XXXXXXXX
+                    </a>
+                </li>
+                <li class="topbar-list">
+                    <a href="mailto:example@example.com" class="topbar-link">
+                        <span class="icon-envelope"></span> example@example.com
+                    </a>
+                </li>
+            </ul>
 
-        <div class="topbar-discount">
             <p>
                 Summer sale discount off <span class="discount">50%</span>!
                 <a href="#" class="shop-now">Shop Now</a>
             </p>
-        </div>
 
-        <form class="topbar-language">
-            <select id="slick">
-                <option value="1" id="select" data-imagesrc="https://cdn1.iconfinder.com/data/icons/ensign-11/512/274_Ensign_Flag_Nation_states-128.png"></option>
-                <option value="2" data-imagesrc="https://cdn1.iconfinder.com/data/icons/ensign-11/512/24_Ensign_Flag_Nation_Bangladesh-128.png"></option>
+            <select class="nice-select">
+                <option data-display="$ USD" value="0" selected>&#36; USD</option>
+                <option value="1">&#2547; BDT</option>
+                <option value="2">&#128; EUR</option>
+                <option value="3">&#163; GBP</option>
+                <option value="4">&#x20B9; INR</option>
             </select>
-        </form>
+        </div>
     </div>
-    <!--/ END TOPBAR /-->
+    <!--/ TOPBAR END -->
 
     <!-- HEADER START -->
     <header class="header">
-        
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a href="index.html" class="brand-logo">
+                <img src="assets/images/logo.svg" alt="website-brand-logo">
+            </a>
+
+            <!-- MAIN MENU -->
+            <ul class="main-menu">
+                <li class="menu-list">
+                    <a class="menu-link" href="#">Demo</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#">
+                        Shop <span class="new">New</span>
+                    </a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#">Product</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#">
+                        Sale <span class="sale">Sale</span>
+                    </a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#">Portfolio</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#">LookBook</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-link" href="#">Blog</a>
+                </li>
+            </ul>
+            
+            <!-- ICON MENU -->
+            <ul class="icon-lists">
+                <li class="icon-list">
+                    <a href="#" class="icon-link icon-search"></a>
+                </li>
+                <li class="icon-list">
+                    <a href="#" class="icon-link icon-user-flat"></a>
+                </li>
+                <li class="icon-list">
+                    <a href="#" class="icon-link icon-heart">
+                        <span class="counter">0</span>
+                    </a>
+                </li>
+                <li class="icon-list">
+                    <a href="#" class="icon-link icon-shopping-cart">
+                        <span class="counter">20</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <!--/ HEADER END -->
 
-    <!-- SCRIPTS -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/jquery.ddslick.min.js"></script>
+    <!-- MEGA-MENU START -->
+    <div class="container mega-menu">
+        <div class="row">
+            <div class="col-3 dropdown-lists">
+                <h6>Homepages</h6>
+                <div class="dropdown-list">
+                    <a class="dropdown-link hot-item" href="#">
+                        Home Default <span class="hot">Hot</span>
+                    </a>
+                    <a class="dropdown-link hot-item" href="#">
+                        Home Classic <span class="hot">Hot</span>
+                    </a>
+                    <a class="dropdown-link" href="#">Blog Item 3</a>
+                    <a class="dropdown-link" href="#">Blog Item 4</a>
+                    <a class="dropdown-link" href="#">Blog Item 5</a>
+                    <a class="dropdown-link" href="#">Blog Item 6</a>
+                    <a class="dropdown-link" href="#">Blog Item 7</a>
+                    <a class="dropdown-link" href="#">Blog Item 8</a>
+                    <a class="dropdown-link new-item2" href="#">
+                        Home Glasses <span class="new">New</span>
+                    </a>
+                    <a class="dropdown-link new-item2" href="#">
+                        Home Glasses <span class="new">New</span>
+                    </a>
+                    <a class="dropdown-link" href="#">Blog Item 10</a>
+                    <a class="dropdown-link" href="#">Blog Item 11</a>
+                    <a class="dropdown-link" href="#">Blog Item 12</a>
+                    <a class="dropdown-link" href="#">Blog Item 13</a>
+                    <a class="dropdown-link" href="#">Blog Item 14</a>
+                    <a class="dropdown-link new-item" href="#">
+                        Home Cosmetics <span class="new">New</span>
+                    </a>
+                    <a class="dropdown-link new-item" href="#">
+                        Home Glasses
+                    </a>
+                </div>
+            </div>
+            <div class="col-3 dropdown-lists">
+                <h6>Homepages</h6>
+                <div class="dropdown-list">
+                    <a class="dropdown-link" href="#">Blog Item 1</a>
+                    <a class="dropdown-link" href="#">Blog Item 2</a>
+                    <a class="dropdown-link" href="#">Blog Item 3</a>
+                    <a class="dropdown-link" href="#">Blog Item 4</a>
+                    <a class="dropdown-link" href="#">Blog Item 5</a>
+                    <a class="dropdown-link" href="#">Blog Item 6</a>
+                    <a class="dropdown-link" href="#">Blog Item 7</a>
+                    <a class="dropdown-link" href="#">Blog Item 8</a>
+                </div>
+            </div>
+            <div class="col-3 dropdown-lists">
+                <h6>Header Layouts</h6>
+                <div class="dropdown-list">
+                    <a class="dropdown-link" href="#">Blog Item 1</a>
+                    <a class="dropdown-link" href="#">Blog Item 2</a>
+                    <a class="dropdown-link" href="#">Blog Item 3</a>
+                    <a class="dropdown-link" href="#">Blog Item 4</a>
+                    <a class="dropdown-link" href="#">Blog Item 5</a>
+                    <a class="dropdown-link" href="#">Blog Item 6</a>
+                    <a class="dropdown-link" href="#">Blog Item 7</a>
+                    <a class="dropdown-link" href="#">Blog Item 8</a>
+                    <a class="dropdown-link" href="#">Blog Item 9</a>
+                </div>
+            </div>
+            <div class="col-3 dropdown-lists">
+                <h6>Features</h6>
+                <div class="dropdown-list">
+                    <a class="dropdown-link" href="#">Blog Item 1</a>
+                    <a class="dropdown-link" href="#">Blog Item 2</a>
+                    <a class="dropdown-link" href="#">Blog Item 3</a>
+                    <a class="dropdown-link" href="#">Blog Item 4</a>
+                    <a class="dropdown-link" href="#">Blog Item 5</a>
+                    <a class="dropdown-link" href="#">Blog Item 6</a>
+                    <a class="dropdown-link" href="#">Blog Item 7</a>
+                    <a class="dropdown-link" href="#">Blog Item 8</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ MEGA-MENU END -->
+
+    <!-- JAVASCRIPT SOURCES -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- CUSTOM SCRIPT SOURCE -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
