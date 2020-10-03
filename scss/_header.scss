@@ -1,0 +1,80 @@
+.topbar {
+    background: $background-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+
+    .topbar-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .contact-us {
+            display: flex;
+            align-items: center;
+            color: $heading;
+            margin-left: .5rem;
+            span {
+                margin-left: .35rem;
+                transition: all .5s ease-in-out;
+            }
+
+            &:hover {
+                span {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .topbar-discount {
+        p {
+            .discount {
+                color: $offer;
+            }
+
+            .shop-now {
+                color: #333;
+                transition: all .5s ease-in-out;
+                
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .dd-select {
+        width: 70px !important;
+        border: 0;
+        border-radius: .25rem;
+        background: transparent !important;
+    }
+
+    .dd-options {
+        display: flex;
+        justify-content: center;
+        width: 70px !important;
+        overflow: hidden;
+        background: #f4f4f4;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+        border: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+    }
+
+    .dd-selected-image {
+        width: 20px;
+    }
+
+    .dd-option-image {
+        max-width: 20px;
+        vertical-align: middle;
+        float: none;
+        margin-right: 0;
+    }
+}
