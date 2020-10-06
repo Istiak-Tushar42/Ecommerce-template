@@ -7,8 +7,14 @@
     <title>Ecommerce</title>
     <!-- NICE SELECT CSS -->
     <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- BOOTSNAV CSS -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FLICKITY CSS -->
+    <link rel="stylesheet" href="assets/css/flickity.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -46,152 +52,534 @@
     <!--/ TOPBAR END -->
 
     <!-- HEADER START -->
-    <header class="header">
+    <header class="header pb-1">
         <div class="container-fluid">
-            <!-- LOGO -->
-            <a href="index.html" class="brand-logo">
-                <img src="assets/images/logo.svg" alt="website-brand-logo">
-            </a>
+            <div class="row no-gutters">
+                <div class="col-12 p-0">
+                    <nav class="d-flex align-items-center justify-content-between main-menu-list">
+                        <a href="index.html" class="navbar-brand m-0 p-0 x-block">
+                            <img src="assets/images/logo.svg" class="img-fluid" alt="">
+                        </a>
 
-            <!-- MAIN MENU -->
-            <ul class="main-menu">
-                <li class="menu-list">
-                    <a class="menu-link" href="#">Demo</a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="#">
-                        Shop <span class="new">New</span>
-                    </a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="#">Product</a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="#">
-                        Sale <span class="sale">Sale</span>
-                    </a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="#">Portfolio</a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="#">LookBook</a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-link" href="#">Blog</a>
-                </li>
-            </ul>
-            
-            <!-- ICON MENU -->
-            <ul class="icon-lists">
-                <li class="icon-list">
-                    <a href="#" class="icon-link icon-search"></a>
-                </li>
-                <li class="icon-list">
-                    <a href="#" class="icon-link icon-user-flat"></a>
-                </li>
-                <li class="icon-list">
-                    <a href="#" class="icon-link icon-heart">
-                        <span class="counter">0</span>
-                    </a>
-                </li>
-                <li class="icon-list">
-                    <a href="#" class="icon-link icon-shopping-cart">
-                        <span class="counter">20</span>
-                    </a>
-                </li>
-            </ul>
+                        <!-- MAIN-MENU-AREA -->
+                        <ul class="nav p-0 d-flex main-nav pt-3">
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button">Demo</a>
+                                
+                                <!-- MEGA MENU AREA -->
+                                <div class="mega-menu">
+                                    <div class="row">
+                                        <div class="col-md-3 col-6 dropdown-lists">
+                                            <h6>Homepage</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link hot-item" href="#">Home Defatult
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link hot-item" href="#">Home Classic
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link" href="#">Filters area</a>
+                                                <a class="dropdown-link hot-item" href="#">Home Medical
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link hot-item" href="#">Home Furniture
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link new-item" href="#">Home Medical
+                                                    <span class="new">New</span>
+                                                </a>
+                                                <a class="dropdown-link new-item" href="#">Home Medical
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-6 dropdown-lists">
+                                            <h6>Homepage</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link" href="#">Filter Operations</a>
+                                                <a class="dropdown-link" href="#">Filters area</a>
+                                                <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link hot-item" href="#">Home Medical
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link new-item" href="#">Home Medical
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-6 dropdown-lists">
+                                            <h6>Header Layouts</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link hot-item" href="#">Header
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Header 1</a>
+                                                <a class="dropdown-link" href="#">Header 2</a>
+                                                <a class="dropdown-link" href="#">Header 3</a>
+                                                <a class="dropdown-link" href="#">Header 4</a>
+                                                <a class="dropdown-link" href="#">Header 5</a>
+                                                <a class="dropdown-link" href="#">Header 6</a>
+                                                <a class="dropdown-link" href="#">Header 7</a>
+                                                <a class="dropdown-link new-item" href="#">Transparent Header
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-6 dropdown-lists">
+                                            <h6>Shop Pages</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link new-item" href="#">Filter Operations
+                                                    <span class="new">New</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Filters area</a>
+                                                <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link hot-item" href="#">Filter Operations
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link new-item" href="#">Filter Operations
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button"> Shop
+                                    <span class="new-item">New</span>
+                                </a>
+
+                                <!-- MEGA MENU AREA -->
+                                <div class="mega-menu">
+                                    <div class="row">
+                                        <div class="col-4 dropdown-lists">
+                                            <div class="row no-gutters">
+                                                <div class="col mr-3">
+                                                    <h6>Shop Pages</h6>
+
+                                                    <div class="dropdown-list">
+                                                        <a class="dropdown-link hot-item" href="#">Filter Operations</a>
+                                                        <a class="dropdown-link hot-item" href="#">Filters area
+                                                            <span class="hot">Hot</span>
+                                                        </a>
+                                                        <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                        <a class="dropdown-link" href="#">Load more button</a>
+                                                        <a class="dropdown-link new-item" href="#">Connections Link
+                                                            <span class="new">New</span>
+                                                        </a>
+                                                        <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                        <a class="dropdown-link" href="#">Hidden Search</a>
+                                                        <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6>Features</h6>
+
+                                                    <div class="dropdown-list">
+                                                        <a class="dropdown-link hot-item" href="#"> Filter Operations
+                                                            <span class="hot">Hot</span>
+                                                        </a>
+                                                        <a class="dropdown-link" href="#"></a>
+                                                        <a class="dropdown-link" href="#">Filters area</a>
+                                                        <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                        <a class="dropdown-link new-item" href="#">Load more button
+                                                            <span class="new">New</span>
+                                                        </a>
+                                                        <a class="dropdown-link" href="#">Connections Link</a>
+                                                        <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                        <a class="dropdown-link" href="#">Hidden Search</a>
+                                                        <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <a href="#" class="women-link">
+                                                <img src="assets/images/mega-menu/women.webp" alt="women photo" class="card-img-top">
+                                                <span class="women">Women</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <a href="#" class="women-link">
+                                                <img src="assets/images/mega-menu/men.webp" alt="men photo" class="card-img-top">
+                                                <span class="women">Men</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button">Product</a>
+                                
+                                <!-- MEGA MENU AREA -->
+                                <div class="mega-menu">
+                                    <div class="row">
+                                        <div class="col-3 dropdown-lists">
+                                            <h6>Homepage</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link hot-item" href="#">Home Defatult
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link hot-item" href="#">Home Classic
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link" href="#">Filters area</a>
+                                                <a class="dropdown-link hot-item" href="#">Home Medical
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link hot-item" href="#">Home Furniture
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-3 dropdown-lists">
+                                            <h6>Homepage</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link" href="#">Filter Operations</a>
+                                                <a class="dropdown-link" href="#">Filters area</a>
+                                                <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link hot-item" href="#">Home Medical
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link new-item" href="#">Home Medical
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-3 dropdown-lists">
+                                            <h6>Header Layouts</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link hot-item" href="#">Header
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Header 1</a>
+                                                <a class="dropdown-link" href="#">Header 2</a>
+                                                <a class="dropdown-link" href="#">Header 3</a>
+                                                <a class="dropdown-link" href="#">Header 4</a>
+                                                <a class="dropdown-link" href="#">Header 5</a>
+                                                <a class="dropdown-link" href="#">Header 6</a>
+                                                <a class="dropdown-link" href="#">Header 7</a>
+                                                <a class="dropdown-link new-item" href="#">Transparent Header
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-3 dropdown-lists">
+                                            <h6>Shop Pages</h6>
+
+                                            <div class="dropdown-list">
+                                                <a class="dropdown-link hot-item" href="#">Filter Operations
+                                                    <span class="hot">Hot</span>
+                                                </a>
+                                                <a class="dropdown-link" href="#">Filters area</a>
+                                                <a class="dropdown-link" href="#">Filter sidebar</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link" href="#">Infinity Scroll</a>
+                                                <a class="dropdown-link" href="#">Hidden Search</a>
+                                                <a class="dropdown-link" href="#">Search Fullscreen</a>
+                                                <a class="dropdown-link" href="#">Load more button</a>
+                                                <a class="dropdown-link" href="#">Connections Link</a>
+                                                <a class="dropdown-link new-item" href="#">Filter Operations
+                                                    <span class="new">New</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button"> Sale
+                                    <span class="sale-item">Sale</span>
+                                </a>
+
+                                <!-- MEGA MENU AREA -->
+                                <div class="mega-menu mega-sale">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <ul class="sale-menu">
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Acessories</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Footwear</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Women</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">T-Shirt</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Shoes</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Denim</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Dress</a>
+                                                </li>
+                                                <li class="sale-item">
+                                                    <a href="#" class="sale-link">Men</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-10">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="card border-0">
+                                                        <div class="card-body p-0">
+                                                            <a href="#" class="d-block">
+                                                                <img src="assets/images/mega-menu/1.webp" alt="" class="card-img-top">
+                                                            </a>
+                                                            <span class="new-item">New</span>
+                                                        </div>
+                                                        <div class="card-footer p-0 bg-transparent border-0">
+                                                            <a href="#" class="item-name d-block">Analogue Resin Strap</a>
+                                                            <span class="price">$30</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="card border-0">
+                                                        <div class="card-body p-0">
+                                                            <a href="#" class="d-block">
+                                                                <img src="assets/images/mega-menu/2.webp" alt="" class="card-img-top">
+                                                            </a>
+                                                            <span class="new-item">New</span>
+                                                        </div>
+                                                        <div class="card-footer p-0 bg-transparent border-0">
+                                                            <a href="#" class="item-name d-block">Analogue Resin Strap</a>
+                                                            <span class="price">$30</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="card border-0">
+                                                        <div class="card-body p-0">
+                                                            <a href="#" class="d-block">
+                                                                <img src="assets/images/mega-menu/3.webp" alt="" class="card-img-top">
+                                                            </a>
+                                                            <span class="new-item">New</span>
+                                                        </div>
+                                                        <div class="card-footer p-0 bg-transparent border-0">
+                                                            <a href="#" class="item-name d-block">Analogue Resin Strap</a>
+                                                            <span class="price">$30</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="card border-0">
+                                                        <div class="card-body p-0">
+                                                            <a href="#" class="d-block">
+                                                                <img src="assets/images/mega-menu/4.webp" alt="" class="card-img-top">
+                                                            </a>
+                                                            <span class="new-item">New</span>
+                                                        </div>
+                                                        <div class="card-footer p-0 bg-transparent border-0">
+                                                            <a href="#" class="item-name d-block">Analogue Resin Strap</a>
+                                                            <span class="price">$30</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button">Portfolio</a>
+                            </li>
+
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button">LookBook</a>
+                            </li>
+
+                            <li class="nav-item mega-area">
+                                <a href="#" class="nav-link" role="button">Blog</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="nav p-0 social-icons d-flex">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link icon-search"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link icon-user"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link icon-heart wishlist">
+                                    <span class="wishlist-counter">0</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link icon-shopping-cart cart">
+                                    <span class="cart-counter">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- MEGA-MENU START -->
+            <div class="container mega-menu d-none">
+                <div class="row">
+                    <div class="col-3 dropdown-lists">
+                        <h6>Homepages</h6>
+                        <div class="dropdown-list">
+                            <a class="dropdown-link hot-item" href="#">
+                                Home Default <span class="hot">HOT</span>
+                            </a>
+                            <a class="dropdown-link hot-item" href="#">
+                                Home Classic <span class="hot">Hot</span>
+                            </a>
+                            <a class="dropdown-link" href="#">Blog Item 3</a>
+                            <a class="dropdown-link" href="#">Blog Item 4</a>
+                            <a class="dropdown-link" href="#">Blog Item 5</a>
+                            <a class="dropdown-link" href="#">Blog Item 6</a>
+                            <a class="dropdown-link" href="#">Blog Item 7</a>
+                            <a class="dropdown-link" href="#">Blog Item 8</a>
+                            <a class="dropdown-link new-item2" href="#">
+                                Home Glasses <span class="new">New</span>
+                            </a>
+                            <a class="dropdown-link new-item2" href="#">
+                                Home Glasses <span class="new">New</span>
+                            </a>
+                            <a class="dropdown-link" href="#">Blog Item 10</a>
+                            <a class="dropdown-link" href="#">Blog Item 11</a>
+                            <a class="dropdown-link" href="#">Blog Item 12</a>
+                            <a class="dropdown-link" href="#">Blog Item 13</a>
+                            <a class="dropdown-link" href="#">Blog Item 14</a>
+                            <a class="dropdown-link new-item" href="#">
+                                Home Cosmetics <span class="new">New</span>
+                            </a>
+                            <a class="dropdown-link new-item" href="#">
+                                Home Glasses
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 dropdown-lists">
+                        <h6>Homepages</h6>
+                        <div class="dropdown-list">
+                            <a class="dropdown-link" href="#">Blog Item 1</a>
+                            <a class="dropdown-link" href="#">Blog Item 2</a>
+                            <a class="dropdown-link" href="#">Blog Item 3</a>
+                            <a class="dropdown-link" href="#">Blog Item 4</a>
+                            <a class="dropdown-link" href="#">Blog Item 5</a>
+                            <a class="dropdown-link" href="#">Blog Item 6</a>
+                            <a class="dropdown-link" href="#">Blog Item 7</a>
+                            <a class="dropdown-link" href="#">Blog Item 8</a>
+                        </div>
+                    </div>
+                    <div class="col-3 dropdown-lists">
+                        <h6>Header Layouts</h6>
+                        <div class="dropdown-list">
+                            <a class="dropdown-link" href="#">Blog Item 1</a>
+                            <a class="dropdown-link" href="#">Blog Item 2</a>
+                            <a class="dropdown-link" href="#">Blog Item 3</a>
+                            <a class="dropdown-link" href="#">Blog Item 4</a>
+                            <a class="dropdown-link" href="#">Blog Item 5</a>
+                            <a class="dropdown-link" href="#">Blog Item 6</a>
+                            <a class="dropdown-link" href="#">Blog Item 7</a>
+                            <a class="dropdown-link" href="#">Blog Item 8</a>
+                            <a class="dropdown-link" href="#">Blog Item 9</a>
+                        </div>
+                    </div>
+                    <div class="col-3 dropdown-lists">
+                        <h6>Features</h6>
+                        <div class="dropdown-list">
+                            <a class="dropdown-link" href="#">Blog Item 1</a>
+                            <a class="dropdown-link" href="#">Blog Item 2</a>
+                            <a class="dropdown-link" href="#">Blog Item 3</a>
+                            <a class="dropdown-link" href="#">Blog Item 4</a>
+                            <a class="dropdown-link" href="#">Blog Item 5</a>
+                            <a class="dropdown-link" href="#">Blog Item 6</a>
+                            <a class="dropdown-link" href="#">Blog Item 7</a>
+                            <a class="dropdown-link" href="#">Blog Item 8</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ MEGA-MENU END -->
         </div>
     </header>
     <!--/ HEADER END -->
-
-    <!-- MEGA-MENU START -->
-    <div class="container mega-menu">
-        <div class="row">
-            <div class="col-3 dropdown-lists">
-                <h6>Homepages</h6>
-                <div class="dropdown-list">
-                    <a class="dropdown-link hot-item" href="#">
-                        Home Default <span class="hot">Hot</span>
-                    </a>
-                    <a class="dropdown-link hot-item" href="#">
-                        Home Classic <span class="hot">Hot</span>
-                    </a>
-                    <a class="dropdown-link" href="#">Blog Item 3</a>
-                    <a class="dropdown-link" href="#">Blog Item 4</a>
-                    <a class="dropdown-link" href="#">Blog Item 5</a>
-                    <a class="dropdown-link" href="#">Blog Item 6</a>
-                    <a class="dropdown-link" href="#">Blog Item 7</a>
-                    <a class="dropdown-link" href="#">Blog Item 8</a>
-                    <a class="dropdown-link new-item2" href="#">
-                        Home Glasses <span class="new">New</span>
-                    </a>
-                    <a class="dropdown-link new-item2" href="#">
-                        Home Glasses <span class="new">New</span>
-                    </a>
-                    <a class="dropdown-link" href="#">Blog Item 10</a>
-                    <a class="dropdown-link" href="#">Blog Item 11</a>
-                    <a class="dropdown-link" href="#">Blog Item 12</a>
-                    <a class="dropdown-link" href="#">Blog Item 13</a>
-                    <a class="dropdown-link" href="#">Blog Item 14</a>
-                    <a class="dropdown-link new-item" href="#">
-                        Home Cosmetics <span class="new">New</span>
-                    </a>
-                    <a class="dropdown-link new-item" href="#">
-                        Home Glasses
-                    </a>
-                </div>
-            </div>
-            <div class="col-3 dropdown-lists">
-                <h6>Homepages</h6>
-                <div class="dropdown-list">
-                    <a class="dropdown-link" href="#">Blog Item 1</a>
-                    <a class="dropdown-link" href="#">Blog Item 2</a>
-                    <a class="dropdown-link" href="#">Blog Item 3</a>
-                    <a class="dropdown-link" href="#">Blog Item 4</a>
-                    <a class="dropdown-link" href="#">Blog Item 5</a>
-                    <a class="dropdown-link" href="#">Blog Item 6</a>
-                    <a class="dropdown-link" href="#">Blog Item 7</a>
-                    <a class="dropdown-link" href="#">Blog Item 8</a>
-                </div>
-            </div>
-            <div class="col-3 dropdown-lists">
-                <h6>Header Layouts</h6>
-                <div class="dropdown-list">
-                    <a class="dropdown-link" href="#">Blog Item 1</a>
-                    <a class="dropdown-link" href="#">Blog Item 2</a>
-                    <a class="dropdown-link" href="#">Blog Item 3</a>
-                    <a class="dropdown-link" href="#">Blog Item 4</a>
-                    <a class="dropdown-link" href="#">Blog Item 5</a>
-                    <a class="dropdown-link" href="#">Blog Item 6</a>
-                    <a class="dropdown-link" href="#">Blog Item 7</a>
-                    <a class="dropdown-link" href="#">Blog Item 8</a>
-                    <a class="dropdown-link" href="#">Blog Item 9</a>
-                </div>
-            </div>
-            <div class="col-3 dropdown-lists">
-                <h6>Features</h6>
-                <div class="dropdown-list">
-                    <a class="dropdown-link" href="#">Blog Item 1</a>
-                    <a class="dropdown-link" href="#">Blog Item 2</a>
-                    <a class="dropdown-link" href="#">Blog Item 3</a>
-                    <a class="dropdown-link" href="#">Blog Item 4</a>
-                    <a class="dropdown-link" href="#">Blog Item 5</a>
-                    <a class="dropdown-link" href="#">Blog Item 6</a>
-                    <a class="dropdown-link" href="#">Blog Item 7</a>
-                    <a class="dropdown-link" href="#">Blog Item 8</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ MEGA-MENU END -->
 
     <!-- JAVASCRIPT SOURCES -->
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- CUSTOM SCRIPT SOURCE -->
+    <!-- FLICKITY JS -->
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- CUSTOM SCRIPT -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
