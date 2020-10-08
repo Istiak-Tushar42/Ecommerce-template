@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   width: 1100px;
   position: absolute;
-  left: -200px;
+  left: -100px;
   top: 45px;
   padding: 1.5rem 2.5rem;
   -webkit-transform: translateY(15px) translateZ(0);
@@ -473,8 +473,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .main-menu-list .main-nav .mega-area .mega-sale {
-  width: 1170px;
-  left: -200px;
+  width: 1100px;
+  left: -100px;
   right: 0;
   position: absolute;
 }
@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .main-menu-list .main-nav .mega-area .mega-sale .owl-carousel .item .card .card-body .sizes {
   position: absolute;
-  top: 250px;
+  top: 230px;
   left: 0;
   right: 0;
   text-align: center;
@@ -720,6 +720,47 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .main-menu-list .main-nav .dropdown-area:hover .dropdown-menu-list {
   display: block;
+}
+
+.header .main-menu-list .menu-icons .nav-item .nav-link {
+  padding: 0;
+  font-size: 22px;
+  margin-right: 1rem;
+  color: #212529;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transition-property: color;
+  transition-property: color;
+  font-weight: 500;
+}
+
+.header .main-menu-list .menu-icons .nav-item .nav-link:hover {
+  color: #00badb;
+}
+
+.header .main-menu-list .menu-icons .nav-item .counter {
+  position: relative;
+}
+
+.header .main-menu-list .menu-icons .nav-item .counter .count {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: #212529;
+  color: #ffffff;
+  font-size: 9px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 /** BANNER START HERE */
