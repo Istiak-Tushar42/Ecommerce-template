@@ -9,14 +9,20 @@ $(document).ready(function() {
     $('select').niceSelect();
 }); // niceSelect JS END
 
+// BOOTSTRAP 4 TOOLTIP
+$(function () {
+    $('button').tooltip();
+});
 
-/*** FLICKITY JS */
-$('.main-carousel').flickity({
-    // wrapAround: true,
-    // pageDots: false,
-    // initialIndex: 1,
-    // accessibility: true,
-    // autoPlay: false,
-    // groupCells: true
-}); // FLICKITY JS END
-
+/*** OWL-CAROUSEL INIT */
+$('.owl-carousel').owlCarousel({
+    rtl: false,
+    loop: true,
+    margin: 20,
+    nav: true,
+    responsive: {
+        1000:{
+            items: 4
+        }
+    }
+});

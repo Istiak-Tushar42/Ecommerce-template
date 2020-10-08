@@ -126,7 +126,7 @@
                         display: block;
                     }
                 }
-
+                
                 /*** MEGA-MENU START HERE ***/
                 .mega-menu {
                     display: none;
@@ -200,7 +200,7 @@
 
                         img {
                             height: 100%;
-                            transition: all 1s ease;
+                            transition: transform 1s ease;
                             &:hover {
                                 transform: scale(1.1);
                             }
@@ -251,33 +251,218 @@
                     right: 0;
                     position: absolute;
 
-                    .main-carousel {
-                        height: 350px;
+                    .owl-carousel {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
 
-                        .carousel-cell {
-                            width: 25%;
-                            margin-right: 10px;
-                            background: #8C8;
-                            border-radius: 5px;
+                        .item {
+                            position: relative;
 
-                            img {
-                                display: block;
+                            .card {
+                                .card-body {
+                                    .card-img {
+                                        transition: transform .5s ease;
+                                        
+                                        img {
+                                            margin-bottom: 1rem;
+                                            transition: transform .75s ease;
+                                        }
+
+                                        .img-hover {
+                                            display: none;
+                                        }
+                                    }
+
+                                    .wishlist {
+                                        position: absolute;
+                                        top: 10px;
+                                        left: 10px;
+                                        color: $black;
+                                        transition: color .5s ease-in-out;
+                                        font-size: 18px;
+                                        z-index: 1235;
+                                        cursor: pointer;
+                                        font-weight: bold;
+        
+                                        &:hover {
+                                            color: $primary;
+                                        }
+                                    }
+                                    
+                                    .new-item {
+                                        @include offer(green);
+                                    }
+                                    
+                                    .discount {
+                                        @include offer($secondary);
+                                    }
+
+                                    %view {
+                                        background: $white;
+                                        color: $black;
+                                        padding: .35rem 0;
+                                        border-radius: 25px;
+                                        margin-bottom: .75rem;
+                                        transition: background-color .5s ease-in-out;
+                                        text-align: center;
+                                        font-size: 13px;
+                                        width: 110px;
+
+                                        .icons {
+                                            display: none;
+                                            font-size: 20px;
+                                        }
+
+                                        &:hover {
+                                            background-color: $black;
+                                            color: $white;
+
+                                            .view-text {
+                                                display: none;
+                                            }
+
+                                            .icons {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+
+                                    .quick-view {
+                                        @extend %view;
+                                        position: absolute;
+                                        top: 110px;
+                                        left: 50px;
+                                    }
+
+                                    .quick-shop {
+                                        @extend %view;
+                                        position: absolute;
+                                        top: 155px;
+                                        left: 50px;
+                                    }
+
+                                    .sizes {
+                                        position: absolute;
+                                        top: 250px;
+                                        left: 0;
+                                        right: 0;
+                                        text-align: center;
+                                        color: $black;
+                                    }
+
+                                    .quick-view, .quick-shop, .sizes {
+                                        display: none;
+                                    }
+                                }
+
+                                .card-footer {
+                                    .title {
+                                        color: $black;
+                                        transition: color .5s ease-in-out;
+
+                                        &:hover {
+                                            color: $primary;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    .card-img {
+                                        .img-card {
+                                            display: none;
+                                        }
+
+                                        .img-hover {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .quick-view, .quick-shop, .sizes {
+                                        display: block;
+                                    }
+                                }
                             }
                         }
-                        
-                        /* cell number */
-                        .carousel-cell:before {
-                            display: block;
+
+                        .owl-nav {
+                            position: absolute;
+                            top: 130px;
+                            left: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            z-index: 1234;
+
+                            button {
+                                display: none;
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                border: solid 2px $black;
+                                color: $black;
+                                line-height: 0;
+                                transition: background-color .4s ease-in-out;
+
+                                &:focus {
+                                    outline: none;
+                                }
+
+                                &:hover {
+                                    background-color: $primary;
+                                    color: $white;
+                                    border: none;
+                                }
+
+                                span {
+                                    font-size: 40px;
+                                }
+                            }
+                        }
+
+                        .owl-dot {
+                            display: none;
+                        }
+
+                        // SHOW ARROW BUTTONS
+                        &:hover {
+                            .owl-nav {
+                                button {
+                                    display: block;
+                                }
+                            }
                         }
                     }
+                }
+            }
 
-                    .flickity-enabled {
-                        position: static;
+            .dropdown-area {
+                position: static;
+
+                .dropdown-menu-list {
+                    background: $white;
+                    width: 250px;
+                    position: absolute;
+                    top: 45px;
+                    transform: translateY(15px) translateZ(0);
+                    transition: opacity .2s, visibility .2s, transform .2s;
+                    z-index: 7895;
+                    box-shadow: inset 0 0 0 1px #eaeaea, 0 5px 20px rgba(0,0,0,.15);
+                    padding: 1rem;
+                    display: none;
+
+                    .dropdown-list {
+                        display: block;
+                        margin-bottom: 1rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
+                }
 
-
-                    .flickity-page-dots {
-                        display: none;
+                &:hover {
+                    .dropdown-menu-list {
+                        display: block;
                     }
                 }
             }
